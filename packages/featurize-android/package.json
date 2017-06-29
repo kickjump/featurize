@@ -1,8 +1,10 @@
 {
-  "name": "@kj/droid",
+  "name": "featurize-android",
   "version": "1.0.0",
   "description": "android device and sdkmangager",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
   "author": "Ifiok Jr. <ifiokotung@gmail.com>",
   "license": "MIT"
 }

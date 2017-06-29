@@ -7,7 +7,6 @@
     "check": "gulp check",
     "format": "gulp format",
     "prepush": "gulp check",
-    "precommit": "gulp check",
     "flow": "gulp flow",
     "lint": "gulp lint",
     "publish": "gulp publish",
@@ -29,6 +28,7 @@
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-prettier": "^2.1.2",
     "flow-bin": "^0.49.1",
     "gh-pages": "^1.0.0",
@@ -55,7 +55,19 @@
     "testPathIgnorePatterns": [
       "/mocks/",
       "/lib/"
-    ]
+    ],
+    "collectCoverageFrom" : ["packages/**/*.{js,jsx}", "!**/node_modules/**", "!**/vendor/**", "!**/lib/**"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  }
 }
