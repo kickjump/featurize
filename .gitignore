@@ -67,6 +67,6 @@ typings/
 package-lock.json
 packages/**/yarn.lock
 lib/
-es
+es/
 _book
 .vscode/

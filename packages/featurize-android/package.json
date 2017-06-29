@@ -1,10 +1,21 @@
 {
   "name": "featurize-android",
   "version": "0.0.1-alpha.0",
-  "description": "android device and sdkmangager",
+  "description": "android emulator and sdkmangager",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "typings": "index.d.ts",
+  "keywords": [
+    "featurize",
+    "android-emulator"
+  ],
   "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
   "author": "Ifiok Jr. <ifiokotung@gmail.com>",
   "license": "MIT"
 }
