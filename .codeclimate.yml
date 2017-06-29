@@ -1,9 +1,5 @@
 engines:
-  nodesecurity:
-    enabled: true
   eslint:
-    enabled: true
-  csslint:
     enabled: true
   duplication:
     enabled: true
@@ -12,11 +8,10 @@ engines:
       - javascript:
 ratings:
   paths:
-  - "**.js"
-  - "**.jsx"
   - packages/src/**/*.js
+  - packages/src/**/*.jsx
 exclude_paths:
-- lib/**/*
-- "**/vendor/**/*"
-- "flow-typed/**/*"
+- lib/**
+- vendor/**/*
+- flow-typed/**
 
