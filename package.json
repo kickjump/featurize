@@ -58,7 +58,7 @@
       "/lib/"
     ],
     "collectCoverageFrom": [
-      "packages/**/*.{js,jsx}",
+      "packages/*/src/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/vendor/**",
       "!**/lib/**"
