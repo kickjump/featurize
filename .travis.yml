@@ -1,0 +1,19 @@
+language: node_js
+cache:
+  yarn: true
+  directories:
+  - node_modules
+node_js:
+  - "8"
+script:
+  - npm run check
+addons:
+  code_climate:
+    repo_token: 6e841c3cca66057041daab004177be1ddf2797836ac97a37a0f2b6ebc2586fd5
+before_script:
+  - yarn bootstrap
+  - yarn build
+after_script:
+  - codeclimate-test-reporter < coverage/lcov.info
+notifications:
+  email: true

@@ -1,11 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "gulp bootstrap",
     "build": "gulp build",
     "clean": "gulp clean",
     "check": "gulp check",
     "format": "gulp format",
+    "prepush": "gulp check",
+    "precommit": "gulp check",
     "flow": "gulp flow",
     "lint": "gulp lint",
     "publish": "gulp publish",
@@ -20,6 +22,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-0": "^6.24.1",
     "bluebird": "^3.5.0",
+    "codeclimate-test-reporter": "^0.5.0",
     "del": "^3.0.0",
     "eslint": "^4.1.1",
     "eslint-config-airbnb-base": "^11.2.0",
@@ -53,5 +56,6 @@
       "/mocks/",
       "/lib/"
     ]
-  }
+  },
+  "license": "MIT"
 }

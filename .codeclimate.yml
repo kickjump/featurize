@@ -1,0 +1,22 @@
+engines:
+  nodesecurity:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript:
+ratings:
+  paths:
+  - "**.js"
+  - "**.jsx"
+  - packages/src/**/*.js
+exclude_paths:
+- lib/**/*
+- "**/vendor/**/*"
+- "flow-typed/**/*"
+
