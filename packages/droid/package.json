@@ -1,0 +1,8 @@
+{
+  "name": "@kj/droid",
+  "version": "1.0.0",
+  "description": "android device and sdkmangager",
+  "main": "index.js",
+  "author": "Ifiok Jr. <ifiokotung@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "gitbook": "3.2.2",
+  "title": "Featurize",
+  "author": "Ifiok Jr. <ifiokotung@gmail.com>",
+  "description": "Official documentation for Featurize",
+  "language": "en",
+  "plugins": ["edit-link", "prism", "-highlight", "github", "anker-enable", "advanced-emoji"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/kickjump/featurize/tree/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/kickjump/featurize/"
+    }
+  }
+}

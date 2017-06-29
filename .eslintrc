@@ -1,0 +1,39 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "prettier", "prettier/flowtype"],
+  "plugins": ["prettier", "flowtype"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "tabWidth": 2
+      }
+    ],
+    "no-param-reassign": "off",
+    "no-use-before-define": ["error", { "functions": false }],
+    "complexity": ["warn", 5],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "import/first": ["off"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "gulpfile.babel.js",
+          "storybook/**/*.js",
+          "tasks/**/*.js"
+        ]
+      }
+    ]
+  }
+}
